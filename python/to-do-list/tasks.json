@@ -1,0 +1,20 @@
+[
+    {
+        "task": "Belajar Python",
+        "date_created": "2024-03-16 23:28:33.940134",
+        "priority": 2,
+        "completed": false
+    },
+    {
+        "task": "Olahraga",
+        "date_created": "2024-03-16 23:28:33.940134",
+        "priority": 1,
+        "completed": true
+    },
+    {
+        "task": "Belanja bahan makanan",
+        "date_created": "2024-03-16 23:28:33.940134",
+        "priority": 3,
+        "completed": false
+    }
+]

@@ -1,0 +1,2 @@
+Buatlah sebuah aplikasi sederhana yang memberikan informasi:
+angkot no.1 s/d no.10 beroperasi dengan baik

@@ -1,0 +1,15 @@
+Pengelolaan Angkot
+
+Mengetahui:
+- Supir
+- Trayek
+- Kas
+- Penumpang (Penumpang naik, penumpang turun)
+
+Data awal:
+Supir awal : Sandhika Galih
+Trayek : Cicaheum - Cibiru
+Penumpang : kosong
+Kas : Rp0,-
+
+Gunakan this dan buat object dengan construction

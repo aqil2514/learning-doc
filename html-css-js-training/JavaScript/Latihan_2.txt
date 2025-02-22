@@ -1,0 +1,36 @@
+Membuat Aplikasi Sederhana Pengelolaan Penumpang Angkot
+
+1. Tambah Penumpang
+Jika angkot kosong
+Tambah penumpang di awal array
+kembalikan isi array dan keluar dari function
+
+else
+telusuri semua kursi dari awal
+jika ada kursi kosong
+tambah penumpang di kursi tersebut
+kembalikan isi array dan keluar dari function
+
+jika sudah ada nama yang sama
+tampilkan pesan kesalahannya
+kembalikan isi array dan keluar dari function
+
+jika seluruh kursi terisi
+tambah penumpang di akhir array
+kembalikan isi array dan keluar dari function
+
+2. Hapus penumpang
+Jika angkot kosong
+tampilkan pesan bahwa angkot kosong dan tidak mungkin ada penumpan turun
+kembalikan isi array dan keluar dari function
+
+else
+
+telusuri seluruh kursi dari awal
+jika nama penumpang sesuai
+hapus penumpang dengan mengubah namanya jadi undefined
+Kembali isi array dan keluar dari function
+
+jika tidak ada nama yang sesuai
+tampilkan pesan kesalahannya
+kembalikan isi array dan keluar dari function
