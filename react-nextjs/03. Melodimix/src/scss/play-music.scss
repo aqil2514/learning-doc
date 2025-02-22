@@ -1,0 +1,91 @@
+figure {
+  display: block;
+  max-width: 250px;
+  img {
+    border-radius: 50%;
+    height: 250px;
+    transform: rotate(360deg);
+    animation: animation-img linear 20s infinite;
+    animation-play-state: paused;
+  }
+  figcaption {
+    text-align: center;
+  }
+}
+
+#music-player {
+  margin-top: 4rem;
+  audio {
+    width: 800px;
+    &::-webkit-media-controls-panel {
+      background-color: #097979;
+    }
+    &::-webkit-media-controls-play-button {
+      background-color: #b1d4e0;
+      border-radius: 50%;
+    }
+    &::-webkit-media-controls-time-remaining-display {
+      color: #fff;
+    }
+    &::-webkit-media-controls-current-time-display {
+      color: #fff;
+    }
+  }
+}
+
+#home-music {
+  &-search {
+    display: block !important;
+    visibility: visible !important;
+
+    label {
+      position: relative;
+      #search-icon {
+        position: absolute;
+        cursor: pointer;
+        font-size: 16px;
+        right: 2%;
+        top: -5%;
+        width: 30px;
+        height: 25px;
+        color: #777070;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.1rem 1rem;
+        color: #000;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+
+.container-music-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+@keyframes animation-img {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transition: rotate(360deg);
+  }
+}
+
+@media (max-width: 1080px) {
+  audio {
+    width: 500px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  audio {
+    width: 300px !important;
+  }
+}

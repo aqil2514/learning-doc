@@ -1,0 +1,26 @@
+[
+  {
+    "artistName": "Alan Walker Ft Sabrina Carpenter & Farruko",
+    "title": "On My Way",
+    "urlStream": "https://napeza.com/files/process-ID=12564/Alan-Walker-Sabrina-Carpenter-Farruko-On-My-Way.mp3",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/id/a/af/Alan_Walker_-_On_My_Way.png"
+  },
+  {
+    "artistName": "Eminem",
+    "title": "Mocking Bird",
+    "urlStream": "https://archive.org/download/acidplanet-audio-00506547/00506547.mp3",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGw6iAGkoSsKxtOJloVdC_-6wmKddV-Kn05w&usqp=CAU"
+  },
+  {
+    "artistName": "Gayle",
+    "title": "ABCDEFU",
+    "urlStream": "https://archive.org/download/gayle_abcdefu_nicer_official_music_video_6205148343525774492/gayle_abcdefu_nicer_official_music_video_6205148343525774492.mp3",
+    "thumbnail": "https://variety.com/wp-content/uploads/2022/01/IMG_6203-e1642606642153.jpg"
+  },
+  {
+    "artistName": "Nathan Evans",
+    "title": "Wellerman (Sea Shanty)",
+    "urlStream": "https://archive.org/download/nathan-evans-wellerman-sea-shanty/Nathan%20Evans%20-%20Wellerman%20%28Sea%20Shanty%29.mp3",
+    "thumbnail": "https://www.scotsman.com/webimg/b25lY21zOjcwZjI2NjQ4LTQyZDYtNDdlMS05ZDkzLTQ4NDA1ODRiNDY1NTpjNGU3OTJkMy02ZDQ4LTQ2NTEtYjNhMi0yYTkyMTg3OGMxNTY=.jpg"
+  }
+]

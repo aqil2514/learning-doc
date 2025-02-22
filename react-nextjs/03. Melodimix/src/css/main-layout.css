@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,700&family=Roboto:wght@400;700&display=swap");
+#home-container {
+  color: white;
+  display: grid;
+  grid-template-areas: "menu nav nav" "menu music music" "collection music music" "collection music music";
+  grid-template-columns: 20% auto auto;
+  grid-template-rows: 10% 20% auto;
+  gap: 8px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 10px;
+  margin: auto;
+  grid-area: nav;
+  background-color: #111;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+#navbar #login-register button {
+  margin: auto 30px auto 0;
+}
+#navbar #login-register #login {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#navbar #login-register #login button {
+  transform: scale(1);
+  background-color: white;
+  border-radius: 1rem;
+  padding: 8px 30px;
+}
+#navbar #login-register #login button:hover {
+  transform: scale(1.1);
+}
+#navbar #login-register #register {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+  opacity: 0.8;
+}
+#navbar #login-register #register:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+#navbar #login-register #register button {
+  background-color: transparent;
+  border-radius: 1rem;
+  padding: 8px 5px;
+}
+#navbar #navigation button {
+  background-color: #000;
+  margin: -5px 0px auto 20px;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+#mobile-navbar,
+#mobile-navigation {
+  display: none;
+}
+
+#home-menu {
+  grid-area: menu;
+  background-color: #111;
+  border-radius: 10px;
+}
+#home-menu img {
+  width: 100%;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#home-menu-beranda, #home-menu-search {
+  margin-top: 20px;
+  margin-left: 15px;
+  display: flex;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  opacity: 0.5;
+  justify-content: flex-start;
+  transition: 0.5s;
+}
+#home-menu-beranda span, #home-menu-search span {
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#home-menu-beranda:hover, #home-menu-search:hover {
+  opacity: 1;
+}
+
+#home-collection {
+  grid-area: collection;
+  background-color: #111;
+  border-radius: 10px;
+}
+#home-collection #collection {
+  padding: 0 10px;
+}
+#home-collection #collection-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#home-collection #collection-title-logo {
+  display: flex;
+  justify-content: flex-start;
+  transition: 0.5s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#home-collection #collection-title-logo:hover {
+  opacity: 1;
+}
+#home-collection #collection-title-logo span {
+  transition: 0.5s;
+  opacity: 0.5;
+  margin: auto 0.5rem;
+}
+#home-collection #collection-title-logo span:hover {
+  opacity: 1;
+}
+#home-collection #collection-title-add {
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#home-collection #collection-title-add:hover {
+  opacity: 1;
+}
+#home-collection #collection-playlist {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: scroll;
+  padding: 0.5rem;
+}
+#home-collection #collection-playlist::-webkit-scrollbar {
+  width: 5px;
+}
+#home-collection #collection-playlist::-webkit-scrollbar-track {
+  background-color: #111;
+}
+#home-collection #collection-playlist::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+#home-collection #collection-playlist-music, #home-collection #collection-playlist-podcast {
+  background-color: #333;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+#home-collection #collection-playlist-music h3, #home-collection #collection-playlist-podcast h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+#home-collection #collection-playlist-music p, #home-collection #collection-playlist-podcast p {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  margin: 0.5rem 0;
+}
+#home-collection #collection-playlist-music a, #home-collection #collection-playlist-podcast a {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  margin: 0.3rem 0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+}
+#home-collection #collection-language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#home-collection #collection-language-select {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  opacity: 0.5;
+  transform: scale(1);
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+}
+#home-collection #collection-language-select:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#home-collection #collection-language-select span {
+  margin-left: 10px;
+}
+
+#home-music {
+  grid-area: music;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+#home-music-search {
+  display: none;
+  visibility: hidden;
+}
+#home-music::-webkit-scrollbar {
+  display: none;
+}
+
+#footer {
+  position: fixed;
+  bottom: 1%;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(90deg, #e008e0, #00ffff, #16d2d8);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+#footer-text {
+  line-height: 1.3;
+}
+#footer-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+#footer-text p {
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px #000;
+  font-size: 16px;
+}
+#footer-regist {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+#footer-regist a {
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 1080px) {
+  #home-menu-beranda span, #home-menu-search span {
+    font-size: 0.8rem;
+  }
+  #collection {
+    padding: 0;
+  }
+  #collection-title-logo span {
+    font-size: 16px !important;
+  }
+  #collection-title-add {
+    visibility: hidden !important;
+    display: none !important;
+  }
+  #collection-playlist h3 {
+    font-size: 16px !important;
+  }
+  #collection-playlist p {
+    font-size: 10px !important;
+  }
+  #collection-playlist a {
+    font-size: 10px !important;
+  }
+  #collection-language {
+    font-size: 11px;
+  }
+  #footer-text {
+    line-height: 1.8;
+  }
+  #footer-text h2 {
+    font-size: 16px;
+  }
+  #footer-text p {
+    font-size: 12px;
+  }
+  #footer-regist {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  #home-collection,
+  #home-menu,
+  #footer,
+  #navbar {
+    display: none;
+  }
+  #mobile-navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: nav;
+    padding: 0 10px;
+    background-color: #111;
+    width: 100%;
+    z-index: 999;
+    max-height: 65px;
+    overflow-y: hidden;
+  }
+  #mobile-navbar img {
+    width: 100%;
+    height: 120px;
+    margin-top: -25px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  #mobile-navbar-list {
+    font-size: 2rem;
+    margin: auto 1rem;
+    cursor: pointer;
+  }
+  #mobile-navigation {
+    display: grid;
+    grid-template-areas: "top" "center" "bottom";
+    grid-template-rows: 10% 20% auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+    background-color: #333;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+  }
+  #mobile-navigation-top {
+    grid-area: top;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #mobile-navigation-top img {
+    width: 100%;
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  #mobile-navigation-top #mobile-navigation-close-icon {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 3rem 1rem;
+    cursor: pointer;
+  }
+  #mobile-navigation-center {
+    grid-area: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+  }
+  #mobile-navigation-center button {
+    margin: 10px 0;
+  }
+  #mobile-navigation-center-login {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  #mobile-navigation-center-login button {
+    transform: scale(1);
+    background-color: white;
+    border-radius: 1rem;
+    padding: 8px 30px;
+  }
+  #mobile-navigation-center-login button:hover {
+    transform: scale(1.1);
+  }
+  #mobile-navigation-center-register {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 0.8;
+  }
+  #mobile-navigation-center-register:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  #mobile-navigation-center-register button {
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 8px 5px;
+  }
+  #mobile-navigation-bottom {
+    grid-area: bottom;
+    text-align: center;
+  }
+  #home-container {
+    grid-template-areas: "nav" "music";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% auto;
+  }
+}/*# sourceMappingURL=main-layout.css.map */
